@@ -1,0 +1,61 @@
+body{
+    background-image: url(img/123.jpg);
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 200px;
+    background-color: khaki;
+    border-radius: 10px;
+    position: relative; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрує кнопки по горизонталі */
+    gap: 15px;
+    margin-top: 280px;
+    margin-left: 300px;
+}
+
+.button:hover{
+    background-color:aquamarine;
+      transition: 0.7s;
+}
+
+/*Варіанти відповіді*/
+.result {
+    position: absolute;
+    left: 75%; /* З'являється праворуч від кнопки */
+    top: 50%;
+    transform: translateY(-50%); /* Центрує по вертикалі */
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    max-width: 200px; /* Обмежуємо ширину результату */
+    display: none;
+}
+
+#resultEmotion {
+    top: 300px; /* Розташування праворуч для "Жанр" */
+}
+
+#resultBodyParts {
+    top: 360px; /* Розташування праворуч для "Локація" */
+}
+
+#resultImprov {
+    top: 420px; /* Розташування праворуч для "Ситуація" */
+}
+
+#resultMainCharacter {
+    top: 478px; /* Розташування праворуч для "Головний герой" */
+}
+
+#resultLetters {
+    top: 545px; /* Розташування праворуч для "Другорядний персонаж" */
+}
