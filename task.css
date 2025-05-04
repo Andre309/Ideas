@@ -1,5 +1,7 @@
 body{
     background-image: url(img/123.jpg);
+    background-size: cover; /* Додаємо адаптивність для фону */
+    background-position: center;
 }
 
 .button {
@@ -58,4 +60,59 @@ body{
 
 #resultLetters {
     top: 545px; /* Розташування праворуч для "Другорядний персонаж" */
+}
+
+/* Медіазапит для мобільних пристроїв (макс. ширина 768px) */
+@media (max-width: 768px) {
+    body {
+        background-size: auto 100%; /* Зменшуємо розмір фону для мобільних */
+    }
+
+    .container {
+        margin-top: 150px; /* Зменшуємо відступи зверху */
+        margin-left: 0; /* Прибираємо відступи зліва */
+        padding: 0 20px; /* Додаємо відступи з боків */
+    }
+
+    .button {
+        width: 100%; /* Робимо кнопку на всю ширину контейнера */
+        font-size: 16px; /* Зменшуємо розмір шрифта для кнопки */
+        padding: 15px; /* Збільшуємо відступи для кнопки */
+    }
+
+    .result {
+        position: static; /* Робимо блоки результатів статичними */
+        max-width: 100%; /* Збільшуємо ширину результату */
+        padding: 10px 15px;
+        font-size: 16px; /* Зменшуємо розмір шрифта для результатів */
+    }
+
+    /* Розташування для результатів */
+    #resultEmotion,
+    #resultBodyParts,
+    #resultImprov,
+    #resultMainCharacter,
+    #resultLetters {
+        position: relative; /* Розташовуємо їх по черзі один під одним */
+        top: auto;
+        left: auto;
+        margin-top: 15px; /* Додаємо відступи між результатами */
+    }
+}
+
+/* Медіазапит для малих екранів (наприклад, смартфонів з шириною екрану 480px і менше) */
+@media (max-width: 480px) {
+    .button {
+        font-size: 14px; /* Додатково зменшуємо шрифт кнопки */
+        padding: 12px; /* Менші відступи для кнопки */
+    }
+
+    .container {
+        margin-top: 100px; /* Зменшуємо відступ зверху */
+    }
+
+    .result {
+        font-size: 14px; /* Зменшуємо шрифт для результатів */
+        padding: 8px 12px; /* Менші відступи для результатів */
+    }
 }
