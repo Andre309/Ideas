@@ -680,7 +680,7 @@ document.getElementById('actLetters').addEventListener('click', function () {
 });
 
 document.getElementById('victim').addEventListener('click', function () {
-    showResult('Victims', victims); // Покажемо результат для "Жертва"
+    showResult('Victim', victims); // Покажемо результат для "Жертва"
 });
 
 document.getElementById('suspect').addEventListener('click', function () {
