@@ -62,6 +62,14 @@ body{
     top: 545px; /* Розташування праворуч для "Другорядний персонаж" */
 }
 
+#resultVictim {
+    top: 605px; /* Розташування праворуч для "Жертва" */
+}
+
+#resultSuspect {
+    top: 665px; /* Розташування праворуч для "Підозрюваний" */
+}
+
 /* Медіазапит для мобільних пристроїв (макс. ширина 768px) */
 @media (max-width: 768px) {
     body {
@@ -92,7 +100,9 @@ body{
     #resultBodyParts,
     #resultImprov,
     #resultMainCharacter,
-    #resultLetters {
+    #resultLetters,
+    #resultVictim,
+    #resultSuspect {
         position: relative; /* Розташовуємо їх по черзі один під одним */
         top: auto;
         left: auto;
